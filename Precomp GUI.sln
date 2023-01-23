@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Precomp GUI", "Precomp GUI\Precomp GUI.csproj", "{9E16D54F-338E-4D1C-8E45-A544DB9FD8F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E16D54F-338E-4D1C-8E45-A544DB9FD8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E16D54F-338E-4D1C-8E45-A544DB9FD8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E16D54F-338E-4D1C-8E45-A544DB9FD8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E16D54F-338E-4D1C-8E45-A544DB9FD8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA8BC11D-4993-4084-BCD7-41BD582C19A4}
+	EndGlobalSection
+EndGlobal

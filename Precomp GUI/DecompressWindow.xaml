@@ -1,0 +1,60 @@
+﻿<Window x:Class="Precomp_GUI.DecompressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Precomp_GUI"
+        mc:Ignorable="d" Closed="Window_Closed" ResizeMode="NoResize" WindowStyle="SingleBorderWindow"
+        Title="DecompressWindow" Height="190" Width="550">
+    <Grid>
+        <StackPanel Margin="15px" Name="SettingsPanel">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label>Precomp Directory:</Label>
+                <TextBox Name="PrecompDirTextBox" Grid.Column="1" Margin="2px 2px 2px 2px" Padding="2px 2px 2px 2px" VerticalAlignment="Center">C:\Program Files (x86)\precomp\windows</TextBox>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label>Input PCF File:</Label>
+                <TextBox Name="InputTextBox" Grid.Column="1" Margin="2px 2px 2px 2px" Padding="2px 2px 2px 2px" VerticalAlignment="Center"></TextBox>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label>Output File:</Label>
+                <TextBox Name="OutputTextBox" Grid.Column="1" Margin="2px 2px 2px 2px" Padding="2px 2px 2px 2px" VerticalAlignment="Center"></TextBox>
+            </Grid>
+            <Grid Margin="0 15 0 0">
+                <Button Name="DecompressButton" Padding="3px" Width="100px" Click="Button_Click">Decompress</Button>
+            </Grid>
+        </StackPanel>
+        <Grid Name="ProgressPanel" Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="5px"></RowDefinition>
+                <RowDefinition Height="5px"></RowDefinition>
+                <RowDefinition Height="15px"></RowDefinition>
+                <RowDefinition Height="20px"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Margin="50px 0 50px 0">
+                <Label HorizontalAlignment="Left" Margin="0" Padding="0">Decompressing...</Label>
+                <Label Name="ProgressLabel" HorizontalAlignment="Right" Margin="0" Padding="0">30.55%</Label>
+            </Grid>
+            <ProgressBar Name="ProgressBar" Grid.Row="3" Value="50" Margin="50px 0 50px 0"></ProgressBar>
+            <Grid Grid.Row="5" Margin="50px 0 50px 0">
+                <Label Name="VerboseProgressLabel" HorizontalAlignment="Left" Margin="0" Padding="0">To C:\Users\EMdT\Downloads\Test\output</Label>
+                <Button Name="StopProcessButton" Click="StopProcessButton_Click" Width="70px" VerticalContentAlignment="Center" Padding="0" HorizontalAlignment="Right">Stop</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
